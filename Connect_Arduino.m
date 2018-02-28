@@ -40,6 +40,15 @@ function Connect_Arduino(name, port, board, libraryList)
                     port = strcat(port, e.message(i));
                     i = i+1;
                 end
+                if(strcmp(port, 'at'))
+                    i=43;
+                    port = e.message(i);
+                    i = i+1;
+                    while ~strcmpi(e.message(i),' ')&&~strcmpi(e.message(i),'.')
+                        port = strcat(port, e.message(i));
+                        i = i+1;
+                    end
+                end
             elseif(strcmpi(e.identifier,'MATLAB:arduinoio:general:connectionExists'))
                 i=37;
                 port=e.message(i);
