@@ -1,7 +1,37 @@
 %Function Connect_Arduino
 %Authors: Camden Penn, Dr. Neil Moore, Dr. Laura Letellier
-%Last code revision: 10/12/17
-%Last comment revision: 10/12/17
+%Last code revision: 2/28/18
+%Last comment revision: 3/26/18
+
+%------------- USAGE -------------
+%
+% In this section, text in [square brackets]
+% is a placeholder for stuff that's up to you.
+%
+% At top of script, include the following line:
+% Connect_Arduino([optional args]);
+%
+% If you are using a Stepper object:
+%   Before the line with Connect_Arduino(), type the following:
+%   clear [name of Stepper];
+%
+% ----------------------------------------------------------------------------
+% Optional args, in the order they appear, are as follows:
+% name:        A string which is the name you want to give the Arduino.
+%              Default: 'a'.
+%
+% port:        A string listing the COM (or /dev/tty/usbmodem ... on Mac) port
+%                       on which the Arduino can be found.
+%              Default: attempts to find any connected Arduino, using the first
+%                       valid port it can find.
+%
+% board:       A string describing the type of Arduino that is being connected.
+%              Default: 'uno'.
+%
+% libraryList: A cell array of the libraries you want the Arduino to use.
+%                       Used _extremely_ rarely.
+%              Default: {'I2C','Servo','SPI'}.
+%-------------------------------------------------------------------------------
 
 %This function will connect an Arduino object without fuss.
 %Please do not touch.

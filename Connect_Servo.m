@@ -1,9 +1,36 @@
 
 %Function Connect_Arduino
 %Authors: Camden Penn, Dr. Neil Moore, Dr. Laura Letellier
-%Last revision: 3/7/17
+%Last revision: 3/26/18
 
-%This function will connect an Arduino object without fuss.
+%------------- USAGE -------------
+%
+% In this section, text in [square brackets]
+% is a placeholder for stuff that's up to you.
+%
+% At top of script, after Connect_Arduino(), include the following line:
+% Connect_Servo([servo name],[Arduino name],[seervo pin],[optional args]);
+%
+% ----------------------------------------------------------------------------
+% Required args are as follows:
+% name: A string which is the name you want to give the Servo, eg. 's1'.
+% 
+% targetArduino: A string which names the Arduino that is using the servo.
+%                Usually 'a'.
+% 
+% pin: The digital pin that the servo is connected to on the Arduino, eg.
+%      'D9'.
+% Optional args, in the order they appear, are as follows:
+% minPulseDuration: The minimum time in seconds that a pulse will last, in seconds.
+%                   Default: 700e-6.
+%
+% maxPulseDuration: The maximum duration taht a pulse will last, in
+%                   seconds.
+%                   Default: 2300e-6.
+%
+%-------------------------------------------------------------------------------
+
+%This function will connect an Arduino servo object without fuss.
 %Please do not touch.
 %Also, please do not use any of the underhanded tricks contained herein.
 %For your own sake.
