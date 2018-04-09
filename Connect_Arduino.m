@@ -47,6 +47,9 @@
 % 5. Repeat steps 1-4 for all Arduinos to connect.
 %-------------------------------------------------------------------------------
 
+% Please note: the Arduino this function connects will always build in the
+% base workspace.
+
 %This function will connect an Arduino object without fuss.
 %Please do not touch.
 %Also, please do not use any of the underhanded tricks contained herein.

@@ -30,6 +30,9 @@
 %
 %-------------------------------------------------------------------------------
 
+% Please note: the servo this function connects will always build in the
+% base workspace.
+
 %This function will connect an Arduino servo object without fuss.
 %Please do not touch.
 %Also, please do not use any of the underhanded tricks contained herein.
