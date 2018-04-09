@@ -33,6 +33,20 @@
 %              Default: {'I2C','Servo','SPI'}.
 %-------------------------------------------------------------------------------
 
+% Connecting Multiple Arduinos
+%-------------------------------------------------------------------------------
+% To connect multiple Arduinos at once, do the following.
+% 1. Plug in exactly one Arduino.
+% 2. In the Command Window, type 'Connect_Arduino()', then hit Enter.
+% 3. The text that prints will mention a port.
+%       On Windows, the port will be 'COM<some number>'.
+%       On Mac, it will be '/dev/tty/usbmodem.<some number>' (or something
+%           similar).
+% 4. At the start of your script, type the following:
+%    Connect_Arduino('<the name you want for that Arduino>','<the port you just saw>');
+% 5. Repeat steps 1-4 for all Arduinos to connect.
+%-------------------------------------------------------------------------------
+
 %This function will connect an Arduino object without fuss.
 %Please do not touch.
 %Also, please do not use any of the underhanded tricks contained herein.
