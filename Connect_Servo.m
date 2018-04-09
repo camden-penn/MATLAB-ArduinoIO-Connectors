@@ -71,6 +71,10 @@ function Connect_Servo(name, targetArduino,pin, minPulseDuration, maxPulseDurati
         evalin('base',sprintf('%s= servo(%s,''%s'', ''MinPulseDuration'',%f, ''MaxPulseDuration'',%f);', name,targetArduino,pin,minPulseDuration, maxPulseDuration));
         disp('Connected.');
     end
+    %If Connect_Servo was called from inside a function, copy the object 
+    %from the base workspace to the function workspace. 
+    s=evalin('base',sprintf('%s;',name));
+    assignin('caller',name,s);
 end
 function nameChangeCheck(name,targetArduino,pin)
     C = evalin('base','who');

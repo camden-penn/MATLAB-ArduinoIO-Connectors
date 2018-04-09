@@ -176,6 +176,10 @@ function Connect_Arduino(name, port, board, libraryList)
         end
         disp('Connected.');
     end
+    %If Connect_Arduino was called from inside a function, copy the object 
+    %from the base workspace to the function workspace. 
+    a=evalin('base',sprintf('%s;',name));
+    assignin('caller',name,a);
 end
 
 %Checks whether the Arduino already exists with a different name - if so,
