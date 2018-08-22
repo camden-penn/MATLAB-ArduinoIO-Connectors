@@ -1,7 +1,7 @@
 %Function Connect_Arduino
 %Authors: Camden Penn, Dr. Neil Moore, Dr. Laura Letellier
 %Last code revision: 2/28/18
-%Last comment revision: 3/26/18
+%Last comment revision: 8/22/18
 
 %------------- USAGE -------------
 %
@@ -48,7 +48,7 @@
 %-------------------------------------------------------------------------------
 
 % Please note: the Arduino this function connects will always build in the
-% base workspace.
+% base workspace and in the workspace from which this function is called.
 
 %This function will connect an Arduino object without fuss.
 %Please do not touch.
